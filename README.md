@@ -10,6 +10,8 @@ Some TODOs and things to verify:
  - does it download keys it finds in a way that survives a power failure?
  - will a Toronto gallery pay me to hang it? Allow me to hang it?
  - Currently hosted at https://ryanfutures.github.io/keyscape/ - add a cool domain like keyscape.futures.love maybe?
+ - Wants to be independently reviewed by a technologist, an artist, and a normie.
+ - Missing a cool favicon?
 
 I wrote those words above. Below this line, everything is Claude's words. Even I have not read them.
 
