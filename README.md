@@ -12,6 +12,7 @@ Some TODOs and things to verify:
  - Currently hosted at https://ryanfutures.github.io/keyscape/ - add a cool domain like keyscape.futures.love maybe?
  - Wants to be independently reviewed by a technologist, an artist, and a normie.
  - Missing a cool favicon?
+ - Make sure no public-facing prose on the page is not handwritten. Don't forcefeed anyone slop!
 
 I wrote those words above. Below this line, everything is Claude's words. Even I have not read them.
 
