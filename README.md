@@ -15,7 +15,7 @@ Some TODOs and things to verify:
  - Make sure no public-facing prose on the page is not handwritten. Don't forcefeed anyone slop!
  - make a video comparison of V1 to this implementation
  - get all the TODOs out of your discord chat from when you prompted up this slop
- - try installing chrome on the target device?
+ - try installing chrome on the target device? try einkbro too. Need to see console.log outputs
  - document the settings and state of the target device
  - legibility testing
  - add an explainer or readme link to the frontend, people are confused what it is
