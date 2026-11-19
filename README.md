@@ -5,10 +5,11 @@ This is a refresh and re-implementation of an older project that was lovingly an
 The code for this reimplementation was written by AI/LLM/Claude. That's why it is hosted here on github, in the belly of the great beast microsoft. My git forges of choice have banned anything smelling of slop or crypto from their platforms, so out of respect I will not lie, I'll simply be hosting my crypto slop here where it belongs.
 
 Some TODOs and things to verify:
- - does it work on any device when static-hosted on github-pages?
+ - does it work on any device when static-hosted on github-pages? YES IT WORKS!
  - does it work on our target device?
  - does it download keys it finds in a way that survives a power failure?
  - will a Toronto gallery pay me to hang it? Allow me to hang it?
+ - Currently hosted at https://ryanfutures.github.io/keyscape/ - add a cool domain like keyscape.futures.love maybe?
 
 I wrote those words above. Below this line, everything is Claude's words. Even I have not read them.
 
