@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>KeyScape</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="data:,">
+  <style>
+    :root { --bg: #05070e; --fg: #9fb8d8; }
+    html, body { margin: 0; height: 100%; background: var(--bg); overflow: hidden; }
+    #scene { position: fixed; inset: 0; }
+
+    /* Title, top-left. */
+    #title {
+      position: fixed; top: 14px; left: 18px; z-index: 20; pointer-events: none;
+      color: var(--fg); font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 16px; letter-spacing: 0.08em; opacity: 0.85;
+    }
+    #title .by { opacity: 0.6; font-size: 12px; }
+
+    /* Brief lock/unlock toast, centred, fades. */
+    #toast {
+      position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      z-index: 40; pointer-events: none; opacity: 0; transition: opacity 0.4s ease;
+      color: var(--fg); font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 13px; letter-spacing: 0.1em; padding: 8px 16px;
+      border: 1px solid currentColor; border-radius: 3px;
+    }
+    #toast.show { opacity: 0.8; }
+
+    /* Quiet info layer: readable up close, ignorable from across the room. */
+    #hud {
+      position: fixed; left: 0; bottom: 0; width: 100%;
+      display: flex; justify-content: space-between; align-items: flex-end;
+      padding: 14px 18px; box-sizing: border-box; pointer-events: none;
+      color: var(--fg); font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 12px; letter-spacing: 0.04em; opacity: 0.72;
+    }
+    #hud .left { max-width: 60%; }
+    #hud #info { opacity: 0.6; }
+    #hud #uptime { opacity: 0.45; margin-top: 4px; }
+    #hud #counter { text-align: right; }
+    #hud #counter .num { font-size: 15px; }
+    #hud a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+
+    /* Theme switcher: small swatches, bottom-right, idle-fades. */
+    #theme-switcher {
+      position: fixed; right: 14px; top: 14px; display: flex; gap: 8px;
+      transition: opacity 0.8s ease; z-index: 20;
+    }
+    #theme-switcher.idle { opacity: 0.12; }
+    #theme-switcher .swatch {
+      width: 20px; height: 20px; border-radius: 50%; padding: 0; cursor: pointer;
+      border: 1.5px solid; opacity: 0.6; transition: opacity 0.2s, transform 0.2s;
+      display: flex; align-items: center; justify-content: center;
+    }
+    #theme-switcher .swatch:hover { opacity: 1; transform: scale(1.12); }
+    #theme-switcher .swatch.active { opacity: 1; box-shadow: 0 0 0 2px rgba(127,127,127,0.35); }
+    #theme-switcher .swatch span { width: 7px; height: 7px; border-radius: 50%; display: block; }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./vendor/three.module.js",
+        "three/addons/": "./vendor/three-addons/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="scene"></div>
+  <div id="title">Keyscape <span class="by">by Ryan Futures</span></div>
+  <div id="hud">
+    <div class="left">
+      <div id="info">mapping random private keys to public keys and addresses</div>
+    </div>
+    <div id="counter">starting...</div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
