@@ -6,13 +6,21 @@ The code for this reimplementation was written by AI/LLM/Claude. That's why it i
 
 Some TODOs and things to verify:
  - does it work on any device when static-hosted on github-pages? YES IT WORKS!
- - does it work on our target device?
+ - does it work on our target device? KIND OF! only the light-mode colours are legible. needs work.
  - does it download keys it finds in a way that survives a power failure?
  - will a Toronto gallery pay me to hang it? Allow me to hang it?
  - Currently hosted at https://ryanfutures.github.io/keyscape/ - add a cool domain like keyscape.futures.love maybe?
  - Wants to be independently reviewed by a technologist, an artist, and a normie.
  - Missing a cool favicon?
  - Make sure no public-facing prose on the page is not handwritten. Don't forcefeed anyone slop!
+ - make a video comparison of V1 to this implementation
+ - get all the TODOs out of your discord chat from when you prompted up this slop
+ - try installing chrome on the target device?
+ - document the settings and state of the target device
+ - legibility testing
+ - add an explainer or readme link to the frontend, people are confused what it is
+ - 3d print a frame for the target device to be hung on the wall in
+
 
 I wrote those words above. Below this line, everything is Claude's words. Even I have not read them.
 
