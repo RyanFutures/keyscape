@@ -49,6 +49,7 @@ more notes even more wow
  - maybe adding a swarm of orbiting cubes of a different fractal type for all the eth L2s, and keeping this piece eth, and making a seperate one with the whole hierarchical key supermultichain thing
  - yeah, have the known-hot key injected at 48h intervals and have the emails deliver a bunch of data, like runtime and keys checked and of course the encrypted known-hot key that went through the full path like a random key.
  - scannable QR on the frame next to the URL so people can take the piece with them in their pocket! and follow something something
+ - start clean with rules for what the LLM should not do, like write prose or comments
 
 
 KEYSCAPE by Ryan Futures
