@@ -50,6 +50,7 @@ more notes even more wow
  - yeah, have the known-hot key injected at 48h intervals and have the emails deliver a bunch of data, like runtime and keys checked and of course the encrypted known-hot key that went through the full path like a random key.
  - scannable QR on the frame next to the URL so people can take the piece with them in their pocket! and follow something something
  - start clean with rules for what the LLM should not do, like write prose or comments
+ - is ~10^77 correct, and is that how we want to write that size? shouldnt it be 2^? because it's bits?
 
 
 KEYSCAPE by Ryan Futures
