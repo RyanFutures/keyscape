@@ -183,7 +183,7 @@ async function topUpQueue() {
 
 async function engineLoop() {
   await workerReady;
-  info.textContent = 'Checking random cryptographic keys to demonstrate that keyspace ~10^77 is HUGE'
+  info.textContent = "Checking random cryptographic keys is knocking on heaven's ~10^77 doors"
   let injectHit = DEBUG_HIT;
 
   while (!hitHalted) {
