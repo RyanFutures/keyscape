@@ -170,7 +170,7 @@ function fmtUptime(ms) {
 // Right-hand readout: keys checked, real found, uptime (next to it), key space.
 function updateCounter() {
   if (!counterEl) return;
-  counterEl.innerHTML = '</span> Searching for ' + fmtUptime(Date.now() - bootT) + ' · keys checked: ' + '<span class="num">' + checkedCount.toLocaleString() + ' · 0 collisions found so far ··· ';
+  counterEl.innerHTML = 'Searching for ' + fmtUptime(Date.now() - bootT) + ' · keys checked: ' + '<span class="num">' + checkedCount.toLocaleString() + '</span> · 0 collisions found so far ··· ';
 }
 setInterval(updateCounter, 1000); // keep the uptime ticking even when idle
 
