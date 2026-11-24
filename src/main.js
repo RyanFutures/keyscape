@@ -170,9 +170,8 @@ function fmtUptime(ms) {
 // Right-hand readout: keys checked, real found, uptime (next to it), key space.
 function updateCounter() {
   if (!counterEl) return;
-  counterEl.innerHTML = '<span class="num">' + checkedCount.toLocaleString() + '</span> keys checked'
-    + ' · 0 real found · uptime ' + fmtUptime(Date.now() - bootT)
-    + ' · ≈ 10⁷⁷ possible';
+  counterEl.innerHTML = '<span class="num">' + checkedCount.toLocaleString() + '</span> Searching for ' + fmtUptime(Date.now() - bootT) + ' · keys checked'
+    + ' · 0 collisions found so far ··· ';
 }
 setInterval(updateCounter, 1000); // keep the uptime ticking even when idle
 
@@ -184,7 +183,7 @@ async function topUpQueue() {
 
 async function engineLoop() {
   await workerReady;
-  info.textContent = 'checking every random key against the live Ethereum blockchain';
+  info.textContent = 'Checking random cryptographic keys to demonstrate that keyspace ~10^77 is HUGE'
   let injectHit = DEBUG_HIT;
 
   while (!hitHalted) {
