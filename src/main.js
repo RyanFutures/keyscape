@@ -182,7 +182,7 @@ async function topUpQueue() {
 
 async function engineLoop() {
   await workerReady;
-  info.textContent = "Knocking on heaven's ~10^77 doors celebrating the mathematical elegance of public key cryptography"
+  info.textContent = "Celebrating the mathematical elegance of public key cryptography by knocking on ~10^77 of heaven's doors"
   let injectHit = DEBUG_HIT;
 
   while (!hitHalted) {
