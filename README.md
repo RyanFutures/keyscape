@@ -51,6 +51,7 @@ more notes even more wow
  - scannable QR on the frame next to the URL so people can take the piece with them in their pocket! and follow something something
  - start clean with rules for what the LLM should not do, like write prose or comments
  - is ~10^77 correct, and is that how we want to write that size? shouldnt it be 2^? because it's bits?
+ - separation of concerns even more. Some text for the frontend is in html, some is in js . Clean and refine.
 
 
 KEYSCAPE by Ryan Futures
