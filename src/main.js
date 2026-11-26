@@ -170,7 +170,7 @@ function fmtUptime(ms) {
 // Right-hand readout: keys checked, real found, uptime (next to it), key space.
 function updateCounter() {
   if (!counterEl) return;
-  counterEl.innerHTML = 'Keys generated: ' + '<span class="num">' + checkedCount.toLocaleString() + '</span><br>' + 'Searching for ' + fmtUptime(Date.now() - bootT) + '<br> 0 collisions found so far ··· ';
+  counterEl.innerHTML = '<span class="num">' + checkedCount.toLocaleString() + '</span> + 'keys generated' + '<br>' + fmtUptime(Date.now() - bootT) + 'search uptime';
 }
 setInterval(updateCounter, 1000); // keep the uptime ticking even when idle
 
@@ -182,7 +182,8 @@ async function topUpQueue() {
 
 async function engineLoop() {
   await workerReady;
-  info.textContent = "Celebrating the mathematical elegance of public key cryptography <br> by knocking on ~10^77 of heaven's doors"
+  info.textContent = "Celebrating the mathematical elegance of public key cryptography 
+    by knocking on ~10^77 of heaven's doors"
   let injectHit = DEBUG_HIT;
 
   while (!hitHalted) {
